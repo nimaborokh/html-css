@@ -1,0 +1,329 @@
+/* start the header */
+.header {
+    position: relative;
+}
+/* start of banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url(../img/header-car.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.banner .title {
+    font-size: 15vmin;
+    color: white;
+    margin: 0;
+}
+.banner .description {
+    color: #fffff9;
+    margin: 5px;
+    font-size: 2vmin;
+}
+/* end of banner */
+/* start of buttons   */
+.buttons {
+    background-color: #e9e9e9;
+    height: 150px;
+}
+.buttons .box-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 50px;
+    left: 10%;
+}
+.buttons .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 25vw;
+    padding: 10px 0px;
+    color: #333;
+}
+.buttons .button i {
+    font-size: 4vw;
+    margin: 10px;
+}
+.buttons .button span {
+    font-size: 2vw;
+    margin: 10px;
+    white-space: nowrap;
+}
+.buttons .button:hover {
+    background-color: #7da1aa;
+    color: white;
+} /* end of buttons   */
+/* end the header */
+
+/* start the content 1  */
+.content-container-1 .contents-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.content-container-1 .contents-1 img {
+    width: 40vw;
+    height: fit-content;
+}
+.content-container-1 .contents-1 h1 {
+    font-size: 2.5vw;
+    text-align: right;
+}
+.content-container-1 .contents-1 h1 span {
+    color: #333;
+    font-weight: lighter;
+    font-size: 1.5vw;
+}
+/* end the content 1  */
+/* start the content 2 */
+.content-container-2 {
+    background-color: #e9e9e9;
+    gap: 10px;
+}
+.content-container-2 .contents-2 {
+    display: flex;
+    align-items: center;
+}
+.content-container-2 .contents-2 h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 2.5vw;
+}
+.content-container-2 .contents-2 h1 span {
+    color: #333;
+    font-weight: lighter;
+    font-size: 1.5vw;
+}
+.content-container-2 .contents-2 h1 a {
+    font-size: 1vw;
+    color: #333;
+    border: 0.2vw solid black;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+.content-container-2 .contents-2 img {
+    width: 40vw;
+    height: fit-content;
+}
+.content-container-2 .contents-2 h1 a:hover {
+    background-color: #7da1aa;
+    color: white;
+    border: 0.2vw solid #7da1aa;
+}
+/* end the content 2 */
+/* start items section  */
+.items {
+    display: flex;
+    flex-direction: row;
+    height: 40vw;
+}
+.items .item {
+    width: 25%;
+    position: relative;
+}
+.items .item img {
+    position: absolute;
+    display: block;
+    height: 40vw;
+    width: 100%;
+}
+.items .item h1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+    color: white;
+    gap: 20px;
+    font-size: 2vw;
+    opacity: 0;
+    width: 100%;
+    height: 40vw;
+    margin: 0;
+}
+.items .item h1 span {
+    color: white;
+    font-weight: lighter;
+    font-size: 1vw;
+}
+.items .item h1 a {
+    font-size: 1.5vw;
+    color: white;
+    border: 0.2vw solid;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+.items .item h1 a:hover {
+    background-color: #7da1aa;
+    border: 0.2vw solid #7da1aa;
+}
+.items .item h1:hover {
+    opacity: 1;
+    background-color: #7da1aabb;
+}
+.items img:hover {
+    content: "ranking & <br> reserching";
+}
+/* end items section */
+/* start about car */
+.about-car .about-car-content {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+    margin: 25px auto;
+}
+.about-car .about-car-content .left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.about-car .about-car-content .left-content i {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    color: #333;
+    font-size: 2vw;
+}
+.about-car .about-car-content .left-content i span {
+    font-size: 1.5vw;
+    font-family: none;
+    font-weight: lighter;
+}
+.about-car .about-car-content .left-content i a {
+    font-size: 1vw;
+    color: #333;
+    border: 0.2vw solid;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-family: none;
+}
+.about-car .about-car-content img {
+    height: 40vw;
+}
+.about-car .about-car-content .rigth-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    direction: rtl;
+}
+.about-car .about-car-content .rigth-content i {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    text-align: right;
+    color: #333;
+    font-size: 2vw;
+}
+.about-car .about-car-content .rigth-content i span {
+    font-size: 1.5vw;
+    font-family: none;
+    font-weight: lighter;
+}
+.about-car .about-car-content .rigth-content i a {
+    font-size: 1vw;
+    color: #333;
+    border: 0.2vw solid;
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-family: none;
+}
+.about-car .about-car-content .rigth-content i a:hover {
+    background-color: #7da1aa;
+    color: white;
+    border: 0.2vw solid #7da1aa;
+}
+.about-car .about-car-content .left-content i a:hover {
+    background-color: #7da1aa;
+    color: white;
+    border: 0.2vw solid #7da1aa;
+}
+/* end about car */
+/* start about us */
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/2024-BMW-i5-M60-001-1440w.jpg);
+    height: 35vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.about-us .about-us-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+.about-us .about-us-content h1 {
+    font-size: 2vw;
+    color: white;
+}
+.about-us .about-us-content span {
+    font-size: 1vw;
+    color: white;
+}
+.about-us .about-us-content a {
+    font-size: 1vw;
+    color: white;
+    border: 0.2vw solid;
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-family: none;
+}
+.about-us .about-us-content a:hover {
+    background-color: #7da1aa;
+    color: white;
+    border: 0.2vw solid #7da1aa;
+}
+/* end about us  */
+/* start footer */
+.footer {
+    background-color: #7da1aa;
+    height: fit-content;
+    padding: 30px 0px;
+    color: white;
+}
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.footer .footer-content h1 {
+    font-size: 2vw;
+    margin: 0;
+}
+.footer .footer-content .contents {
+    display: flex;
+    gap: 0.3vw;
+}
+.footer .footer-content .contents div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer .footer-content .contents div a {
+    color: white;
+    font-size: 1.5vw;
+}
+.footer .footer-content .contents div span {
+    font-size: 1vw;
+}
+/* end footer  */

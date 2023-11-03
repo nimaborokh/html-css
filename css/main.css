@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    margin: 0;
+}
+body a {
+    text-decoration: none;
+}
+/* grid */
+.box-container {
+    margin: 0px auto;
+    width: 80%;
+}
+.container{
+    width: 100%;
+}
