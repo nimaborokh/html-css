@@ -1,13 +1,14 @@
 /* start the header */
 .header {
     position: relative;
+    background-color: black;
 }
 /* start of banner */
 .banner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: 80vmin;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
         url(../img/header-car.jpg);
     background-size: cover;
@@ -29,13 +30,14 @@
 /* start of buttons   */
 .buttons {
     background-color: #e9e9e9;
-    height: 150px;
+    height: 20vmin;
+    width: 100vw;
 }
-.buttons .box-container {
+.buttons .botton-container {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 50px;
+    bottom: 5%;
     left: 10%;
 }
 .buttons .button {
@@ -45,8 +47,10 @@
     justify-content: center;
     background-color: white;
     width: 25vw;
+    height: fit-content;
     padding: 10px 0px;
     color: #333;
+    transition: 0.4s;
 }
 .buttons .button i {
     font-size: 4vw;
@@ -110,6 +114,7 @@
     width: fit-content;
     padding: 5px 15px;
     border-radius: 50px;
+    transition: 0.4s;
 }
 .content-container-2 .contents-2 img {
     width: 40vw;
@@ -150,6 +155,7 @@
     width: 100%;
     height: 40vw;
     margin: 0;
+    transition: 0.4s;
 }
 .items .item h1 span {
     color: white;
@@ -163,6 +169,7 @@
     width: fit-content;
     padding: 5px 15px;
     border-radius: 50px;
+    transition: 0.4s;
 }
 .items .item h1 a:hover {
     background-color: #7da1aa;
@@ -189,26 +196,27 @@
     flex-direction: column;
     gap: 50px;
 }
-.about-car .about-car-content .left-content i {
+.about-car .about-car-content .left-content .item-contents {
     display: flex;
     flex-direction: column;
     gap: 2vw;
     color: #333;
+}
+.about-car .about-car-content .left-content .item-contents i {
     font-size: 2vw;
 }
-.about-car .about-car-content .left-content i span {
+.about-car .about-car-content .left-content .item-contents span {
     font-size: 1.5vw;
-    font-family: none;
     font-weight: lighter;
 }
-.about-car .about-car-content .left-content i a {
+.about-car .about-car-content .left-content .item-contents a {
     font-size: 1vw;
     color: #333;
     border: 0.2vw solid;
     width: fit-content;
     padding: 5px 15px;
     border-radius: 50px;
-    font-family: none;
+    transition: 0.4s;
 }
 .about-car .about-car-content img {
     height: 40vw;
@@ -219,34 +227,35 @@
     gap: 50px;
     direction: rtl;
 }
-.about-car .about-car-content .rigth-content i {
+.about-car .about-car-content .rigth-content .item-contents {
     display: flex;
     flex-direction: column;
     gap: 2vw;
     text-align: right;
     color: #333;
+}
+.about-car .about-car-content .rigth-content .item-contents i {
     font-size: 2vw;
 }
-.about-car .about-car-content .rigth-content i span {
+.about-car .about-car-content .rigth-content .item-contents span {
     font-size: 1.5vw;
-    font-family: none;
     font-weight: lighter;
 }
-.about-car .about-car-content .rigth-content i a {
+.about-car .about-car-content .rigth-content .item-contents a {
     font-size: 1vw;
     color: #333;
     border: 0.2vw solid;
     width: max-content;
     padding: 5px 15px;
     border-radius: 50px;
-    font-family: none;
+    transition: 0.4s;
 }
-.about-car .about-car-content .rigth-content i a:hover {
+.about-car .about-car-content .rigth-content .item-contents a:hover {
     background-color: #7da1aa;
     color: white;
     border: 0.2vw solid #7da1aa;
 }
-.about-car .about-car-content .left-content i a:hover {
+.about-car .about-car-content .left-content .item-contents a:hover {
     background-color: #7da1aa;
     color: white;
     border: 0.2vw solid #7da1aa;
@@ -258,8 +267,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(../img/2024-BMW-i5-M60-001-1440w.jpg);
-    height: 35vw;
+    background: url(../img/about-us.jpg);
+    height: fit-content;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -270,13 +279,14 @@
     flex-direction: column;
     gap: 20px;
     color: white;
+    margin: 30px;
 }
 .about-us .about-us-content h1 {
-    font-size: 2vw;
+    font-size: 3vw;
     color: white;
 }
 .about-us .about-us-content span {
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: white;
 }
 .about-us .about-us-content a {
@@ -286,7 +296,7 @@
     width: max-content;
     padding: 5px 15px;
     border-radius: 50px;
-    font-family: none;
+    transition: 0.4s;
 }
 .about-us .about-us-content a:hover {
     background-color: #7da1aa;
@@ -322,8 +332,15 @@
 .footer .footer-content .contents div a {
     color: white;
     font-size: 1.5vw;
+    transition: 0.4s;
 }
 .footer .footer-content .contents div span {
     font-size: 1vw;
 }
 /* end footer  */
+@media screen and (max-width: 576px) {
+    .banner {
+        background-size: 100%;
+        background-position-y: 20%;
+    }
+}
